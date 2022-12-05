@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background-color: black;
+}
+
+h1{
+     color: crimson;
+     margin-bottom: 2em;
+}
+.list-items {
+    list-style-type: none;
+
+}
+
+.list-items li , .animal-detail {
+    color: azure;
+    padding: 1.5em 2em;
+    border: 2px solid crimson;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    border-radius: 1rem;
+
+
+}
+
+.list-items li div , .animal-detail div{
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}
+
+.list-items li img , .animal-detail img{
+   margin-top:  1em;
+   border-radius: 1em;
+}
+
+.list-items li:hover{
+    background-color: #212121 ;
+}
+
+
+.animal-detail div .arrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.animal-detail div .arrow div{
+    
+    display: flex;
+    flex-direction: row;
+    border: 1px solid crimson;
+    /* width: 40/ */
+    padding: .5em;
+    border-radius: .5em;
+}
+
+.animal-detail div .arrow button{
+    padding: .5em;
+    border-radius: .5em;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid crimson;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+.animal-detail div .arrow div:hover, .animal-detail div .arrow button:hover{
+    background-color: #212121;
+}
+
+
+
+
+/*
+styling the animal details part
+
+*/
+
+
+/* .animal-detail {
+    color: azure;
+    padding: 1.5em 2em;
+    border: 2px solid crimson;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    border-radius: 1rem;
+
+} */
+
+
+.hide {
+     display: none;
+}
+
+.show {
+    display: block;
+}
